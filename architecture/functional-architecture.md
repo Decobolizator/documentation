@@ -3,18 +3,18 @@
 ## Schéma de l'architecture fonctionnelle
 ```mermaid
 flowchart TB
-    COBOL(Fichier COBOL)-->Parser-->RI
-    RI("Représentation intermédiaire")
+    COBOL([Fichier COBOL])-->Parser-->RI
+    RI(["Représentation intermédiaire"])
 
     subgraph Orchestrateur["Orchestrateur LLM"]
-        Resume(Résumé par chunk)
+        Resume([Résumé par chunk])
         Output
     end
 
-    RI --> Contexte(Contexte global)
-    RI --> Chunker -->LC(Liste de chunks) --> JsonC(JSON par chunk)--"Traitement en parallèle"--> Resume --> JSONF(JSON final)--> Output
+    RI --> Contexte([Contexte global])
+    RI --> Chunker -->LC([Liste de chunks]) --> JsonC([JSON par chunk])--"Traitement en parallèle"--> Resume --> JSONF([JSON final])--> Output
 
-    Output(Explication en langage naturel)
+    Output([Explication en langage naturel])
 
     Contexte --> JSONF & JsonC
 ```

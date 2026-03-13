@@ -26,7 +26,7 @@ L'architecture proposée est la suivante :
 ```mermaid
 flowchart LR
 subgraph EXPOSE["Exposé vers l'extérieur"]
-REACT["React<br>port 3000"]
+REACT["React<br>port 3000"]---
 FASTIFY["Fastify<br>port 4000"]
 end
 subgraph INTERNE["Réseau interne uniquement"]
@@ -34,7 +34,7 @@ FASTAPI["FastAPI<br>port 5000"]
 REDIS["Redis<br>port 6379"]
 PG["PostgreSQL<br>port 5432"]
 end
-FASTIFY --> FASTAPI & REDIS
+FASTIFY --> FASTAPI & REDIS & PG
 FASTAPI --> REDIS & PG
 ```
 
