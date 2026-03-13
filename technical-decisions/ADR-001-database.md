@@ -5,7 +5,8 @@ Statut : en attente de validation
 
 ## Contexte
 
-Le projet Decobolizator nécessite de persister plusieurs types de données : les jobs d'analyse soumis par les utilisateurs, les résultats de parsing COBOL (chunks, variables, métadonnées structurelles), les explications générées par le LLM, ainsi que les états intermédiaires du pipeline de traitement. Le service doit supporter des accès concurrents et potentiellement un historique des analyses par programme COBOL.
+Le projet Decobolizator nécessite de gérer plusieurs types de données : les jobs d'analyse soumis par les utilisateurs, les résultats de parsing COBOL (chunks, variables, métadonnées structurelles), les explications générées par le LLM, ainsi que les états intermédiaires du pipeline de traitement.
+Le service doit supporter des accès concurrents et potentiellement un historique des analyses par programme COBOL.
 
 ## Options considérées
 
