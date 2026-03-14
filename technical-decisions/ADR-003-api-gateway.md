@@ -1,4 +1,4 @@
-# ADR-004 : Choix de l'API Gateway
+# ADR-003 : Choix de l'API Gateway
 
 Date : 2026-03-13
 Statut : en discussion
