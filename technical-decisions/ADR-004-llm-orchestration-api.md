@@ -1,4 +1,4 @@
-# ADR-005 : Choix de l'API d'orchestration IA
+# ADR-004 : Choix de l'API d'orchestration IA
 
 Date : 2026-03-13
 Statut : en attente de validation
