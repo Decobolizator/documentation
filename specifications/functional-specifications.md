@@ -16,19 +16,28 @@ Le système ne permet pas :
 
 ---
 
-## Liste des fonctionnalités
-* F1 : Traduire un fichier COBOL en langage naturel
-* F1' : Traduire un projet (composé de plusieurs fichiers) COBOL en langage naturel
-* F2 : Traduire du COBOL en pseudo-code
-* F3 : Ajouter de la colorisation pour permettre une compréhension plus aisée du code
-* F4 : Générer une représentation schématique du COBOL
-* F5 : Créer un utilisateur 
-* F6 : Se connecter à son compte 
-* F7 : Supprimer son compte
-* F8 : Accéder à l'historique de ses traductions
-* F9 : Lancer la procédure "mot de passe oublié"
-* F10 : Se déconnecter
-* F11 : Consulter / télécharger une traduction
+## Fonctionnalités
+
+| Nom  | Fonctionnalité                                                                 | Implémentation |
+|------|-------------------------------------------------------------------------------|----------------|
+| F1   | Traduire un fichier COBOL en langage naturel                                 | Oui            |
+| F1'  | Traduire un projet (plusieurs fichiers COBOL) en langage naturel             | Oui            |
+| F2   | Traduire du COBOL en pseudo-code                                             | Oui            |
+| F3   | Ajouter de la colorisation pour faciliter la compréhension du code           | Oui            |
+| F4   | Générer une représentation schématique du COBOL                              | Oui            |
+| F5   | Créer un utilisateur                                                         | Oui            |
+| F6   | Se connecter à son compte                                                    | Oui            |
+| F7   | Supprimer son compte                                                         | Oui            |
+| F8   | Accéder à l'historique de ses traductions                                    | Oui            |
+| F9   | Lancer la procédure "mot de passe oublié"                                    | Oui            |
+| F10  | Se déconnecter                                                               | Oui            |
+| F11  | Consulter / télécharger une traduction                                       | Oui            |
+
+
+--- 
+## Tableau des fonctionnalités utile ou non ?
+
+
 
 ---
 
@@ -54,7 +63,7 @@ Utilisateur
 L'utilisateur peut traduire du code COBOL en langage naturel. La traduction est réalisée par section du code afin de faciliter la compréhension.
 
 ##### Input : 
-* Code COBOL
+* Code COBOL (fixed format)
 * Fichier .cbl, .cob, .ccp
 
 ##### Output : 
@@ -84,7 +93,7 @@ L'utilisateur peut importer plusieurs fichiers COBOL constituant un projet. Le s
 * Dossier contenant plusieurs fichiers COBOL
 
 #### Output :
-* Un fichier global
+* Un fichier global (fixed format)
 * Des fichiers séparés par module
 
 #### Règles :
